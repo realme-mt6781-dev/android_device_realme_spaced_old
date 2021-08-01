@@ -17,8 +17,8 @@ cc_binary {
     name: "android.hardware.biometrics.fingerprint@2.3-service.spaced",
     defaults: ["hidl_defaults"],
     init_rc: ["android.hardware.biometrics.fingerprint@2.3-service.spaced.rc"],
-    relative_install_path: "hw",
     vintf_fragments: ["android.hardware.biometrics.fingerprint@2.3-service.spaced.xml"],
+    relative_install_path: "hw",
     srcs: [
         "BiometricsFingerprint.cpp",
         "service.cpp",
@@ -38,6 +38,4 @@ cc_binary {
         "android.hardware.biometrics.fingerprint@2.3",
         "vendor.oplus.hardware.biometrics.fingerprint@2.1",
     ],
-    vendor: true
 }
-
