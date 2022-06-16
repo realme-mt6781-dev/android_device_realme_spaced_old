@@ -15,3 +15,6 @@ allow system_app vendor_sysfs_usb_supply:dir { search };
 allow system_app vendor_sysfs_usb_supply:file { read };
 allow system_app vendor_sysfs_usb_supply:file { open };
 allow system_app vendor_sysfs_usb_supply:file { getattr };
+
+# Allow KProfiles to be adjusted by a system app
+allow system_app sysfs_kprofiles:file rw_file_perms;
