@@ -372,4 +372,7 @@
          manager will disable alpha trasformation in animations where not
          strictly needed. -->
     <bool name="config_sf_limitedAlpha">true</bool>
+
+     <!-- Whether device has Dart charging support -->
+    <bool name="config_hasDartCharger">true</bool>
 </resources>
