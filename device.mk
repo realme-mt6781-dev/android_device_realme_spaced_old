@@ -121,7 +121,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-service \
     android.hardware.memtrack@1.0-impl \
     libdrm.vendor \
-    libdrm
+    libdrm \
+    disable_configstore
 
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
