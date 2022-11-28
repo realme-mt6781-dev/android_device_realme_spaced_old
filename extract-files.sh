@@ -66,7 +66,7 @@ function blob_fixup {
            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v32.so" "${2}"
             ;;
         vendor/lib*/libmtkcam_stdutils.so)
-            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "$2"
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
         vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
             sed -i '/vts/Q' "$2"
@@ -77,7 +77,10 @@ function blob_fixup {
             mv "${2}".patched "${2}"
             ;;
         vendor/lib*/hw/audio.primary.mt6781.so)
-            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "$2"
+            "${PATCHELF}" --replace-needed "libmedia_helper.so" "libmedia_helper-v30.so" "${2}"
+            ;;
+        vendor/lib64/hw/android.hardware.thermal@2.0-impl.so)
+            "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
     esac
 }
