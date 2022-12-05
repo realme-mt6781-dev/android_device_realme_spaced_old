@@ -124,6 +124,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 ENABLE_VENDOR_RIL_SERVICE := true
 # SELinux
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 SELINUX_IGNORE_NEVERALLOWS := true
 
 # Verified Boot
