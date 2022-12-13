@@ -104,6 +104,10 @@ PRODUCT_PACKAGES += \
     libhwbinder \
     libhwbinder.vendor
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.spaced
+
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
