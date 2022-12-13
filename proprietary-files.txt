@@ -68,6 +68,8 @@ vendor/etc/init/atcid.rc
 vendor/etc/init/audiocmdservice_atci.rc
 vendor/lib/hw/audio.primary.mt6781.so
 vendor/lib/hw/audio.r_submix.mt6781.so
+vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so
+vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib/libMtkSpeechEnh.so
 vendor/lib/lib_bsscore.so
 vendor/lib/lib_iir.so
@@ -113,6 +115,8 @@ vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib64/hw/audio.primary.mt6781.so
 vendor/lib64/hw/audio.r_submix.mt6781.so
+vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so
+vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/lib_bsscore.so
 vendor/lib64/lib_iir.so
