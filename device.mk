@@ -325,6 +325,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
     android.hardware.thermal@1.0-impl
 
+# VNDK
+PRODUCT_PACKAGES += \
+    libutils-v32
+
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0.vendor \
