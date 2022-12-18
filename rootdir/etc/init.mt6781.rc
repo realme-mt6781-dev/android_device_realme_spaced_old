@@ -1,6 +1,7 @@
 # MTK platform .rc configure
 import /vendor/etc/init/hw/init.connectivity.rc
 import /vendor/etc/init/hw/init.mt6781.usb.rc
+import /vendor/etc/init/hw/init.nfc_detect.rc
 import /vendor/etc/init/hw/init.project.rc
 import /FWUpgradeInit.rc
 import /vendor/etc/init/hw/init.volte.rc
@@ -1097,7 +1098,7 @@ service mtk_secure_element_hal_service /vendor/bin/hw/android.hardware.secure_el
     class hal
     user secure_element
     group secure_element
-    
+        
 #adb
 on property:persist.vendor.radio.port_index=""
     setprop sys.usb.config adb
