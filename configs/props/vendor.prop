@@ -254,6 +254,11 @@ vendor.connsys.driver.ready=no
 ro.vendor.connsys.dedicated.log=1
 ro.vendor.wifi.sap.concurrent.iface=ap1
 
+# Zram
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=1440
+ro.zram.periodic_wb_delay_hours=2
+
 # Logging
 persist.log.tag.DCT=S
 persist.log.tag.libPowerHal=S
