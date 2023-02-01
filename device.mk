@@ -416,6 +416,10 @@ PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor \
     android.hardware.thermal@1.0-impl
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.mediatek
+
 # VNDK
 PRODUCT_PACKAGES += \
     libutils-v32 \
