@@ -240,6 +240,17 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
     libtextclassifier_hash.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service \
+    com.android.nfc_extras \
+    NfcNci \
+    SecureElement \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/permissions/nfc_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/sku_nfc/nfc_features.xml
+
 # USB
 PRODUCT_PACKAGES += \
     android.hardware.usb@1.0.vendor \

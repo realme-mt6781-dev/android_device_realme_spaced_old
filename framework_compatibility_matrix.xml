@@ -282,6 +282,15 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>vendor.nxp.nxpnfc</name>
+    <transport>hwbinder</transport>
+    <version>1.0</version>
+    <interface>
+         <name>INxpNfc</name>
+         <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>vendor.mediatek.hardware.log</name>
     <version>1.0</version>
     <interface>
