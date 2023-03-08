@@ -412,6 +412,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/mediatek \
+    hardware/oplus
 
 # Thermal
 PRODUCT_PACKAGES += \
