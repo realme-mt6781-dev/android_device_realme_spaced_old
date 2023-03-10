@@ -33,6 +33,7 @@ $(VENDOR_SYMLINKS): $(LOCAL_INSTALLED_MODULE)
 	@ln -sf mt6781/libdpframework.so $(TARGET_OUT_VENDOR)/lib64/libdpframework.so
 	@ln -sf mt6781/libdpframework.so $(TARGET_OUT_VENDOR)/lib/libdpframework.so
 	@ln -sf mt6781/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib/libmtk_drvb.so
+	@ln -sf mt6781/libmtk_drvb.so $(TARGET_OUT_VENDOR)/lib64/libmtk_drvb.so
 	@ln -sf mt6781/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib64/libnir_neon_driver.so
 	@ln -sf mt6781/libnir_neon_driver.so $(TARGET_OUT_VENDOR)/lib/libnir_neon_driver.so
 	@ln -sf mt6781/libpq_prot.so $(TARGET_OUT_VENDOR)/lib64/libpq_prot.so
