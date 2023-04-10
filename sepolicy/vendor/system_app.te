@@ -4,3 +4,14 @@ allow system_app proc_pagetypeinfo:file r_file_perms;
 # Zram
 allow system_app sysfs_zram:dir search;
 allow system_app sysfs_zram:file r_file_perms;
+
+# Power Supply
+allow system_app sysfs_batteryinfo:dir { search };
+allow system_app vendor_sysfs_battery_supply:dir { search };
+allow system_app vendor_sysfs_battery_supply:file { read };
+allow system_app vendor_sysfs_battery_supply:file { open };
+allow system_app vendor_sysfs_battery_supply:file { getattr };
+allow system_app vendor_sysfs_usb_supply:dir { search };
+allow system_app vendor_sysfs_usb_supply:file { read };
+allow system_app vendor_sysfs_usb_supply:file { open };
+allow system_app vendor_sysfs_usb_supply:file { getattr };
