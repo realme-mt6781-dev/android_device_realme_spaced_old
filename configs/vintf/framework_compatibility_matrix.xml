@@ -67,6 +67,13 @@
     </interface>
 </hal>
 <hal format="hidl" optional="true">
+    <name>android.hardware.graphics.allocator</name>
+    <interface>
+        <name>IAllocator</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
     <name>android.hardware.radio</name>
     <version>1.0-6</version>
     <interface>
