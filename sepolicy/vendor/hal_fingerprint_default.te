@@ -37,3 +37,8 @@ add_hwservice(hal_fingerprint_default, hal_fingerprint_oplus_hwservice)
 get_prop(hal_fingerprint_default, system_oplus_project_prop)
 set_prop(hal_fingerprint_default, system_fingerprint_prop)
 set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
+
+# vendor sys
+allow hal_fingerprint_default vendor_sysfs_usb_supply:dir { search };
+allow hal_fingerprint_default vendor_sysfs_usb_supply:file { read };
+allow hal_fingerprint_default vendor_sysfs_usb_supply:file { open };
