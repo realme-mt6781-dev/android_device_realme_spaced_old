@@ -32,6 +32,7 @@ genfscon proc /oplus_nfc/chipset                    u:object_r:vendor_proc_nfc_c
 genfscon sysfs /devices/virtual/oplus_chg/usb/otg_switch u:object_r:vendor_sysfs_otg_switch:s0
 
 # Sensors
+genfscon proc /oplusAls                             u:object_r:vendor_proc_oplus_sensor_als:s0
 genfscon proc /oplusSensorFeature                   u:object_r:vendor_proc_oplus_sensor_feature:s0
 genfscon proc /oplusCustom/Sensor                   u:object_r:vendor_proc_oplus_sensor_feature:s0
 genfscon proc /mag_soft_parameter.json              u:object_r:vendor_proc_oplus_sensor_param:s0
