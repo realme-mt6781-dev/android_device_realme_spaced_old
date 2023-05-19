@@ -119,8 +119,7 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
     android.hardware.graphics.common-V2-ndk_platform.vendor \
     android.hardware.graphics.composer@2.1-service \
-    android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl \
+    android.hardware.memtrack-service.mediatek-mali \
     libdrm.vendor \
     libdrm
 

@@ -1955,7 +1955,6 @@ vendor/lib/egl/libMEOW_trace.so
 vendor/lib/hw/vulkan.mali.so
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
-vendor/lib/hw/memtrack.default.so
 vendor/lib/hw/vendor.mediatek.hardware.pq@2.13-impl.so
 vendor/lib/mt6781/libdpframework.so
 vendor/lib/mt6781/libmtk_drvb.so
@@ -2006,7 +2005,6 @@ vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so
 vendor/lib64/hw/hwcomposer.mt6781.so
-vendor/lib64/hw/memtrack.default.so
 vendor/lib64/hw/vendor.mediatek.hardware.pq@2.13-impl.so
 vendor/lib64/mt6781/libdpframework.so
 vendor/lib64/mt6781/libmtk_drvb.so
