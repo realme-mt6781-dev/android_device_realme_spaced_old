@@ -8,6 +8,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/evolution_spaced.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_spaced-user \
-    aosp_spaced-userdebug \
-    aosp_spaced-eng
+    evolution_spaced-user \
+    evolution_spaced-userdebug \
+    evolution_spaced-eng
