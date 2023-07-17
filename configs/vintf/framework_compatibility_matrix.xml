@@ -5,6 +5,14 @@
 -->
 <compatibility-matrix version="4.0" type="framework">
 <hal format="hidl" optional="true">
+    <name>android.hardware.nfc</name>
+    <version>1.2</version>
+    <interface>
+        <name>INfc</name>
+        <instance>default</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
         <name>android.hardware.media.c2</name>
         <version>1.0</version>
         <interface>
@@ -90,6 +98,15 @@
     <interface>
         <name>ISap</name>
         <instance>slot2</instance>
+    </interface>
+</hal>
+<hal format="hidl" optional="true">
+    <name>android.hardware.secure_element</name>
+    <version>1.2</version>
+    <interface>
+        <name>ISecureElement</name>
+        <instance>SIM1</instance>
+        <instance>SIM2</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
@@ -290,11 +307,10 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.nxp.nxpnfc</name>
-    <transport>hwbinder</transport>
     <version>1.0</version>
     <interface>
-         <name>INxpNfc</name>
-         <instance>default</instance>
+        <name>INxpNfc</name>
+        <instance>default</instance>
     </interface>
 </hal>
 <hal format="hidl" optional="true">
@@ -396,7 +412,7 @@
 </hal>
 <hal format="hidl" optional="true">
     <name>vendor.mediatek.hardware.pq</name>
-    <version>2.0-13</version>
+    <version>2.0-15</version>
     <interface>
         <name>IPictureQuality</name>
         <instance>default</instance>
@@ -454,11 +470,10 @@
         <instance>default</instance>
     </interface>
 </hal>
-<hal format="hidl" optional="true">
-    <name>vendor.oplus.hardware.orms.ormsHalService</name>
-    <version>1.0</version>
+<hal format="aidl" optional="true">
+    <name>vendor.oplus.hardware.ormsHalService</name>
     <interface>
-        <name>IOrmsHalService</name>
+        <name>IOrmsAidlHalService</name>
         <instance>default</instance>
     </interface>
 </hal>

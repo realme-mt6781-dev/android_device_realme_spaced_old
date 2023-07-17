@@ -136,7 +136,8 @@
                 <string ...>M -5,0 L -5,10 L 5,10 L 5,0 Z @dp</string>
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M -540,0 L -540,115 L -390,115 L -390,0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout">M -160,0 L -180, 0 L -180, 40 L -130, 40 L -130, 0 Z @dp</string>
+    <string name="config_mainBuiltInDisplayCutoutRectApproximation">@string/config_mainBuiltInDisplayCutout</string>
 
     <!-- Indicate available ColorDisplayManager.COLOR_MODE_xxx. -->
     <integer-array name="config_availableColorModes">
@@ -177,6 +178,7 @@
         <item>mobile_rcs,2001,0,3,60000,true</item>
         <item>mobile_bip,2002,0,3,60000,true</item>
         <item>mobile_vsim,2003,0,-1,60000,true</item>
+        <item>bluetooth,7,7,2,-1,true</item>
     </string-array>
 
     <!-- Boolean indicating USSD over IMS is allowed.
@@ -339,6 +341,9 @@
          * The device must be provisioned with HDCP keys (for protected content).
     -->
     <bool name="config_enableWifiDisplay">true</bool>
+
+    <!--  Define Google play service package for FRP-->
+    <string name="config_persistentDataPackageName">com.google.android.gms</string>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,

@@ -11,9 +11,6 @@ on early-init
     write /sys/devices/platform/10012000.dvfsrc/helio-dvfsrc/dvfsrc_req_ddr_opp -1
     write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
 
-    # Start NFC detection script
-    start nfc_detect
-
 on init
 # change lk_env permission
     chown root system /proc/lk_env
@@ -398,6 +395,16 @@ on post-fs-data
 
     chmod 0660 /dev/mtkfb_vsync
     chown system graphics /dev/mtkfb_vsync
+
+    # Add for SF for individual cgroup to use PowerHAL API
+    mkdir /dev/stune/sf_standalone
+    chown system system /dev/stune/sf_standalone
+    chown system system /dev/stune/sf_standalone/tasks
+    chmod 0664 /dev/stune/sf_standalone/tasks
+    chown system system /dev/stune/sf_standalone/schedtune.uclamp.min
+    chmod 0660 /dev/stune/sf_standalone/schedtune.uclamp.min
+    chown system system /dev/stune/sf_standalone/schedtune.uclamp.max
+    chmod 0660 /dev/stune/sf_standalone/schedtune.uclamp.max
 
     # PMU
     chown root radio /sys/devices/platform/mt-pmic/pmic_access_bank0
@@ -865,6 +872,14 @@ on property:persist.vendor.mediatek.fg.log.enable=1
     write /sys/bus/platform/devices/battery/FG_daemon_log_level 7
     write /proc/sys/kernel/printk 8
 
+service factory_no_image /vendor/bin/factory
+    user root
+    group radio system wifi media gps audio bluetooth wakelock nfc
+    capabilities BLOCK_SUSPEND NET_RAW NET_ADMIN SYS_ADMIN SYS_BOOT
+    socket factory-atci stream 660 radio system
+    disabled
+    oneshot
+
 # reset mdmode when modem crash happens in ATM
 on property:vendor.mtk.md1.status=reset
     setprop persist.vendor.atm.mdmode normal
@@ -888,9 +903,6 @@ service fuelgauged_nvram /vendor/bin/fuelgauged_nvram
 on property:ro.boot.product.vendor.sku=nfc
     start vendor.nfc_hal_service
     start mtk_secure_element_hal_service
-
-on property:ro.boot.product.hardware.sku=""
-    stop vendor.nfc_hal_service
 
 service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
     override

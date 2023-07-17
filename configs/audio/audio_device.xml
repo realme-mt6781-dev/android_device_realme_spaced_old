@@ -226,18 +226,6 @@
             <kctl name="PGA L Mux" value="None" />
             <kctl name="PGA R Mux" value="None" />
         </path>
-        <path name="builtin_Mic_Vow_Mic2" value="turnon">
-            <kctl name="ADC L Mux" value="Left Preamplifier" />
-            <kctl name="ADC R Mux" value="Right Preamplifier" />
-            <kctl name="PGA L Mux" value="AIN3" />
-            <kctl name="PGA R Mux" value="AIN3" />
-        </path>
-        <path name="builtin_Mic_Vow_Mic2" value="turnoff">
-            <kctl name="ADC L Mux" value="Idle" />
-            <kctl name="ADC R Mux" value="Idle" />
-            <kctl name="PGA L Mux" value="None" />
-            <kctl name="PGA R Mux" value="None" />
-        </path>
         <path name="headset_vow_input" value="turnon">
             <kctl name="ADC L Mux" value="Left Preamplifier" />
             <kctl name="ADC R Mux" value="Right Preamplifier" />

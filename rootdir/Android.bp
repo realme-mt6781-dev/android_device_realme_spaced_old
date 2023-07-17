@@ -9,3 +9,10 @@ sh_binary {
     src: "bin/nfc_detect.sh",
     vendor: true,
 }
+
+prebuilt_etc {
+    name: "init.nfc_detect.rc",
+    src: "etc/init.nfc_detect.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
