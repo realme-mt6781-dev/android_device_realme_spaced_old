@@ -2734,22 +2734,6 @@ vendor/lib64/vendor.mediatek.hardware.mms@1.4.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.5.so
 vendor/lib64/vendor.mediatek.hardware.mms@1.6.so
 
-# NFC
-odm/etc/init/init.pn8x.nfc.rc
-odm/etc/nfc/pnscr/libnfc-nxp-pnscr.conf:odm/etc/libnfc-nxp-pnscr.conf
-odm/etc/nfc/libnfc-nxp_RF.conf_21692:vendor/etc/libnfc-nxp_RF.conf
-odm/etc/nfc/libnfc-nxp.conf_21692:vendor/etc/libnfc-nxp.conf
-odm/etc/nfc/libnfc-nci.conf_21692:vendor/etc/libnfc-nci.conf
-odm/lib/ese_client.so
-odm/lib/libpn553_fw.so
-odm/lib/libpn557_fw.so
-odm/lib/libpnscr2.so
-odm/lib/libsn100u_fw.so
-odm/lib/nfc_nci.pn54x.default.so
-odm/lib64/nfc_nci.pn54x.default.so
-odm/lib64/libpnscr2.so
-odm/lib64/ese_client.so
-
 # Neural Networks
 odm/lib/libtfavib.so
 odm/lib/libtflite_mtk_static.so
@@ -2783,6 +2767,16 @@ vendor/lib64/libneuropilot_hal_utils.so
 vendor/lib64/libnir_neon_driver_ndk.mtk.vndk.so
 vendor/lib64/libnxp_extamp_intf.so
 vendor/lib64/libtflite_mtk.so
+
+# NFC
+odm/etc/init/init.pn8x.nfc.rc
+odm/etc/nfc/libnfc-nxp.conf_21692:vendor/etc/libnfc-nxp.conf
+odm/etc/nfc/pnscr/libnfc-nxp-pnscr.conf:odm/etc/libnfc-nxp-pnscr.conf
+odm/lib/libpn553_fw.so
+odm/lib/libpn557_fw.so
+odm/lib/libpnscr2.so
+odm/lib/libsn100u_fw.so
+odm/lib64/libpnscr2.so
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
