@@ -35,6 +35,9 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
+# VINTF
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.service \
