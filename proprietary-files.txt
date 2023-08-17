@@ -1,3 +1,5 @@
+# Unpinned blobs from RMX3151-user 12 SP1A.210812.016 1690531891472 release-keys
+
 # AAL
 vendor/lib/libaal_cust.so
 vendor/lib/libaal_key.so
@@ -478,11 +480,20 @@ odm/lib64/libosenseaidlhalclient.so
 odm/lib64/vendor.oplus.hardware.osense.client-V1-ndk_platform.so 
 odm/lib64/vendor.oplus.hardware.charger@1.0.so
 
+# Chipinfo
+vendor/bin/chipinfo
+vendor/etc/init/chipinfo_init.rc
+
 # Camera
 odm/lib/libmpbase.so
 odm/lib/liboplus_platform_hwi.so
 odm/lib/libosensehalclient.so
 odm/lib/libormshalclient.so
+odm/lib/libAncHumBokeh.so
+odm/lib/libstblur_api.so
+odm/lib/libAncHumVideoBase.so
+odm/lib/libarcsoft_scbokeh_video.so
+odm/lib/libAlgoProcess.so
 odm/lib/vendor.oplus.hardware.engcamera@1.0.so
 odm/lib/vendor.oplus.hardware.osense.client@1.0.so
 odm/lib64/libmpbase.so
@@ -491,6 +502,14 @@ odm/lib64/libremosaiclib.so
 odm/lib64/liboplus_platform_hwi.so
 odm/lib64/libosensehalclient.so
 odm/lib64/libormshalclient.so
+odm/lib64/libarcsoft_dualcam_wt_calibration.so
+odm/lib64/libarcsoft_dualcam_wt_verification.so
+odm/lib64/libcalibverifyW_T.so
+odm/lib64/libarcsoft_scbokeh_video.so
+odm/lib64/libAncHumVideoBase.so
+odm/lib64/libstblur_api.so
+odm/lib64/libAncHumBokeh.so
+odm/lib64/libAlgoProcess.so
 odm/lib64/vendor.oplus.hardware.engcamera@1.0.so
 odm/lib64/vendor.oplus.hardware.osense.client@1.0.so
 vendor/bin/hw/camerahalserver
@@ -556,6 +575,7 @@ vendor/lib/libaiawb_p1ggm.so
 vendor/lib/libaiawb_sun.so
 vendor/lib/libaiawb_sun_model.so
 vendor/lib/libnxp_extamp_intf.so
+vendor/lib/libmtkisp_metadata.so
 vendor/lib/libocam_common.so
 vendor/lib/liboplus_platform_hwi.so
 vendor/lib/libstereoinfoaccessor_vsdof.so
@@ -1231,7 +1251,6 @@ vendor/lib64/libasn1c_mdmi.so
 vendor/lib64/libdip_drv.so
 vendor/lib64/libdip_imem.so
 vendor/lib64/libdre.so
-vendor/lib64/libdynamiclog.so
 vendor/lib64/libeffecthal.base.so
 vendor/lib64/libimagebuffer_wrapper.so
 vendor/lib64/libaiawb_moon.so
@@ -1241,6 +1260,7 @@ vendor/lib64/libaiawb_sun.so
 vendor/lib64/libaiawb_sun_model.so
 vendor/lib64/libmidasserviceintf.so
 vendor/lib64/libmtkcam_fwkutils.so
+vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libocam_common.so
 vendor/lib64/liboplus_platform_hwi.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
@@ -2471,9 +2491,7 @@ lib64/libsource.so
 lib64/libvcodec_cap.so
 lib/libvcodec_cap.so
 lib64/libvcodec_capenc.so
-lib/libvcodec_cap.so
 lib64/libvt_avsync.so
-lib64/libmtk_vt_wrapper.so
 lib64/libvsim-adaptor-client.so
 lib/libvsim-adaptor-client.so
 -framework/mediatek-common.jar
@@ -2490,8 +2508,6 @@ lib/libvsim-adaptor-client.so
 -framework/oplus-framework.jar
 odm/lib/vendor.oplus.hardware.ims@1.0.so
 odm/lib64/vendor.oplus.hardware.ims@1.0.so
-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/bin/hw/vendor.mediatek.hardware.mmagent@1.1-service
 vendor/bin/hw/vtservice_hidl
 vendor/bin/ipsec_mon
@@ -2763,8 +2779,10 @@ vendor/bin/fuelgauged_nvram
 vendor/bin/nvram_daemon
 vendor/etc/init/fuelgauged_nvram_init.rc
 vendor/etc/init/nvram_daemon.rc
+vendor/etc/init/init.connfem.rc
 vendor/etc/init/vendor.mediatek.hardware.nvram@1.1-sevice.rc
 vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
+vendor/lib/libconnfem.so
 vendor/lib/libcustom_nvram.so
 vendor/lib/libfile_op.so
 vendor/lib/libnvram.so
@@ -2772,6 +2790,7 @@ vendor/lib/libnvram_sec.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
+vendor/lib64/libconnfem.so
 vendor/lib64/libcustom_nvram.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libnvram.so
@@ -2783,7 +2802,7 @@ vendor/lib64/vendor.mediatek.hardware.nvram@1.1.so
 # Power
 odm/etc/powerhal/power_app_cfg.xml
 vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
-vendor/etc/init/init.fpsgo.rc
+vendor/etc/init/bootperf.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-service.rc
 vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so
@@ -2950,6 +2969,9 @@ vendor/lib64/vendor.oplus.hardware.radio-V1-ndk_platform.so
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
 vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
+# Reserve
+odm/etc/init/init.oplus.reserve.rc
+
 # Sensors
 odm/bin/hw/vendor.oplus.hardware.oplusSensor@1.0-service
 odm/etc/init/vendor.oplus.hardware.oplusSensor@1.0-service.rc
@@ -3001,36 +3023,6 @@ vendor/etc/mpe.conf
 vendor/lib/hw/android.hardware.thermal@2.0-impl.so
 vendor/lib/libthermalalgo.so
 vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
-
-# Misc
-odm/etc/init/init.oplus.reserve.rc
-odm/init.oplus.seccommon.rc
-odm/lib/libAncHumBokeh.so
-odm/lib/libstblur_api.so
-odm/lib/libAncHumVideoBase.so
-odm/lib/libarcsoft_scbokeh_video.so
-odm/lib/libAlgoProcess.so
-odm/lib64/libarcsoft_dualcam_wt_calibration.so
-odm/lib64/libarcsoft_dualcam_wt_verification.so
-odm/lib64/libcalibverifyW_T.so
-odm/lib64/libarcsoft_scbokeh_video.so
-odm/lib64/libAncHumVideoBase.so
-odm/lib64/libstblur_api.so
-odm/lib64/libAncHumBokeh.so
-odm/lib64/libAlgoProcess.so
-vendor/bin/chipinfo
-vendor/bin/dconfig
-vendor/bin/dexecutor
-vendor/bin/doeapp-memtester
-vendor/etc/init/bootperf.rc
-vendor/etc/init/chipinfo_init.rc
-vendor/etc/init/init.connfem.rc
-vendor/lib/libconnfem.so
-vendor/lib/libdynamiclog.so
-vendor/lib64/libconnfem.so
-vendor/lib64/libforkexecwrap.so
-vendor/lib/libmtkisp_metadata.so
-vendor/lib64/libmtkisp_metadata.so
 
 # ORMS
 odm/bin/hw/vendor.oplus.hardware.ormsHalService-aidl-service
@@ -3128,3 +3120,4 @@ vendor/lib64/libwo.so
 vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+vendor/lib64/libforkexecwrap.so
