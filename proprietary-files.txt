@@ -2478,11 +2478,12 @@ lib64/libvsim-adaptor-client.so
 lib/libvsim-adaptor-client.so
 -framework/mediatek-common.jar
 -framework/mediatek-framework.jar
-framework/mediatek-gwsd.jar
-framework/mediatek-gwsdv2.jar
+-framework/mediatek-carrier-config-manager.jar
+-framework/mediatek-gwsd.jar
+-framework/mediatek-gwsdv2.jar
 -framework/mediatek-ims-base.jar
 -framework/mediatek-ims-common.jar
-framework/mediatek-ims-extension-plugin.jar
+-framework/mediatek-ims-extension-plugin.jar
 -framework/mediatek-telecom-common.jar
 -framework/mediatek-telephony-base.jar
 -framework/mediatek-telephony-common.jar
