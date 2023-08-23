@@ -457,7 +457,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0.vendor \
+    android.hardware.thermal@2.0-service.mtk \
+    android.hardware.thermal@2.0-impl-mtk \
     android.hardware.thermal@1.0-impl
 
 # Touch
