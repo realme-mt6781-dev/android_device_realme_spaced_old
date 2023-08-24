@@ -216,10 +216,6 @@ PRODUCT_PACKAGES += \
    libkeystore-wifi-hidl \
    libkeystore-engine-wifi-hidl
 
-# KProfiles
-PRODUCT_PACKAGES += \
-    KProfiles
-
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.spaced
