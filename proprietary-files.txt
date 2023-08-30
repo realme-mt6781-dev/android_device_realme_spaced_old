@@ -1,4 +1,4 @@
-# Unpinned blobs from RMX3151-user 12 SP1A.210812.016 1690531891472 release-keys
+# Unpinned blobs from RMX3151-user 13 TP1A.220905.001 1690960746577 release-keys
 
 # AAL
 vendor/lib/libaal_cust.so
@@ -461,17 +461,10 @@ vendor/lib64/libbluetooth_audio_session_mediatek.so
 odm/bin/hw/vendor.oplus.hardware.charger@1.0-service
 odm/etc/init/vendor.oplus.hardware.charger@1.0-service.rc
 -odm/etc/vintf/manifest/manifest_oplus_charger.xml
-odm/firmware/fastchg/20171/oplus_vooc_fw_op10.bin
-odm/firmware/fastchg/20353/oplus_vooc_fw_op10.bin
-odm/firmware/fastchg/20827/oplus_vooc_fw_op10.bin
-odm/firmware/fastchg/20827/oplus_vooc_fw_rt5125.bin
-odm/firmware/fastchg/20831/oplus_vooc_fw_op10.bin
-odm/firmware/fastchg/20831/oplus_vooc_fw_rt5125.bin
 odm/firmware/fastchg/20615/charging_thermal_config_default.txt
 odm/firmware/fastchg/20662/charging_thermal_config_default.txt
 odm/firmware/fastchg/21609/charging_thermal_config_default.txt
 odm/firmware/fastchg/21651/charging_thermal_config_default.txt
-odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/firmware/fastchg/charging_thermal_config_default.txt
 odm/lib/vendor.oplus.hardware.charger@1.0.so
 odm/lib/libosenseaidlhalclient.so
@@ -2994,7 +2987,7 @@ vendor/lib/hw/sound_trigger.primary.default.so
 vendor/lib64/hw/sound_trigger.primary.default.so
 
 # Thermal
-odm/etc/temperature_profile/sys_high_temp_protect_realme_21684.xml
+odm/etc/temperature_profile/sys_high_temp_protect_realme_21690.xml
 odm/etc/temperature_profile/sys_thermal_control_config.xml
 vendor/bin/thermal
 vendor/bin/thermal_manager
@@ -3080,9 +3073,9 @@ vendor/lib64/libgz_uree.so
 
 # WiFi
 odm/etc/wifi/txpowerctrl.cfg
-odm/firmware/wifi_active_channel.cfg
+odm/etc/wifi/wifi_active_channel.cfg
 odm/etc/wifi/wifi.cfg
-odm/firmware/wifi_passive_channel.cfg
+odm/etc/wifi/wifi_passive_channel.cfg
 vendor/bin/hw/tetheroffloadservice
 vendor/bin/netdagent
 vendor/bin/netdc
