@@ -192,7 +192,8 @@ PRODUCT_BOOT_JARS += \
     mediatek-telecom-common \
     mediatek-telephony-base \
     mediatek-telephony-common \
-    oplus-framework
+    oplus-framework \
+    oplus-framework-telephony
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -486,3 +487,4 @@ PRODUCT_COPY_FILES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/realme/spaced/spaced-vendor.mk)
+$(call inherit-product, vendor/realme/ims-spaced/ims-spaced-vendor.mk)
